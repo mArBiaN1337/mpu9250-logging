@@ -2,6 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
 secret.txt
+excel/*txt
+excel/*xlsx
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
