@@ -9,6 +9,8 @@ PYTHON = python
 
 all: put sync_lib sync_secret
 
+get_data:
+	$(AMPY) get imu_data.txt ampy_get/imu_data/imu_data.txt
 # put them separately to avoid ampy timeout issues
 put:
 	$(AMPY) put boot.py
@@ -37,5 +39,3 @@ get:
 run:
 	$(AMPY) run main.py
 
-get_data:
-	$(AMPY) get imu_data.txt ampy_get/imu_data/imu_data.txt
