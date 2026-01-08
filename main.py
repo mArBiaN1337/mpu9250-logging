@@ -24,7 +24,7 @@ class IMUDataLogger:
             f.flush()
 
     def log_data(self, samples=200):
-        print("Logging {} samples...".format(samples))
+        print("Logging {} samples...".format(2*samples))
         with open("imu_data.txt", "a") as f:
             # sometimes the file doesnt have the amount of samples 
             # so we log a bit more to be sure
